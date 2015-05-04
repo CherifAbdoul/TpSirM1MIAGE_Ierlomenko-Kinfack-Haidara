@@ -6,5 +6,5 @@
                                                                                               Kinfack Mariane
                                                                                               Haidara Abdoul Wahab
   
-  ####Partie JPA Servlet Angular
-  Nous avons décidé d'utiliser JHIPSTER pour nous générer notre l'environnement de développement. C'est un framework génial a utilisé.
+###Partie JPA Servlet Angular
+Nous avons décidé d'utiliser JHIPSTER pour nous générer notre l'environnement de développement. C'est un framework génial a utilisé.
