@@ -8,3 +8,4 @@
   
 ###Partie JPA Servlet Angular
 Nous avons décidé d'utiliser JHIPSTER pour nous générer notre l'environnement de développement. C'est un framework génial a utilisé.
+
