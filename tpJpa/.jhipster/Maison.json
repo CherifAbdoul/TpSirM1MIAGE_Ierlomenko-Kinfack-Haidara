@@ -1,0 +1,59 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "appareils",
+            "relationshipNameCapitalized": "Appareils",
+            "relationshipFieldName": "appareils",
+            "otherEntityName": "appareil",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Appareil"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "personne",
+            "relationshipNameCapitalized": "Personne",
+            "relationshipFieldName": "personne",
+            "otherEntityName": "personne",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Personne",
+            "otherEntityField": "nom"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "adresse",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Adresse",
+            "fieldNameUnderscored": "adresse",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "adresseip",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Adresseip",
+            "fieldNameUnderscored": "adresseip",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "superficie",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Superficie",
+            "fieldNameUnderscored": "superficie",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150416215948",
+    "pagination": "pager",
+    "validation": false
+}

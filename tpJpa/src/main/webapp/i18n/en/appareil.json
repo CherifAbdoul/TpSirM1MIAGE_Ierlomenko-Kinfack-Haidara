@@ -1,0 +1,20 @@
+{
+    "tpjpaApp": {
+        "appareil" : {
+            "home": {
+                "title": "Appareils",
+                "createLabel": "Create a new Appareil",
+                "createOrEditLabel": "Create or edit a Appareil"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Appareil {{ id }}?"
+            },
+            "detail": {
+                "title": "Appareil"
+            },
+            "nomapp": "Nomapp",
+            "conso": "Conso",
+            "maison": "maison"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "tpjpaApp": {
+        "chauffage" : {
+            "home": {
+                "title": "Chauffages",
+                "createLabel": "Create a new Chauffage",
+                "createOrEditLabel": "Create or edit a Chauffage"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Chauffage {{ id }}?"
+            },
+            "detail": {
+                "title": "Chauffage"
+            }
+        }
+    }
+}

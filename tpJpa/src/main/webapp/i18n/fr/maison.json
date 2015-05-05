@@ -1,0 +1,23 @@
+{
+    "tpjpaApp": {
+        "maison" : {
+            "home": {
+                "title": "Maisons",
+                "createLabel": "Créer un nouveau Maison",
+                "createOrEditLabel": "Créer ou éditer un Maison"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Maison {{ id }} ?"
+            },
+            "detail": {
+                "title": "Maison"
+            },
+            "adresse": "Adresse",
+            "adresseip": "Adresseip",
+            "superficie": "Superficie",
+            "appareils": "appareils",
+            "personne": "personne"
+        }
+    }
+}
+

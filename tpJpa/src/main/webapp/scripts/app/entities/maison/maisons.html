@@ -1,0 +1,137 @@
+<div>
+
+    <h2 translate="tpjpaApp.maison.home.title">Maison</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveMaisonModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="tpjpaApp.maison.home.createLabel">Create a new Maison</span>
+    </button>
+    <div class="modal fade" id="saveMaisonModal" tabindex="-1" role="dialog" aria-labelledby="myMaisonLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myMaisonLabel" translate="tpjpaApp.maison.home.createOrEditLabel">Create or edit a Maison</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="maison.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="tpjpaApp.maison.adresse">Adresse</label>
+                            <input type="text" class="form-control" name="adresse"
+                                   ng-model="maison.adresse">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="tpjpaApp.maison.adresseip">Adresseip</label>
+                            <input type="text" class="form-control" name="adresseip"
+                                   ng-model="maison.adresseip">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="tpjpaApp.maison.superficie">Superficie</label>
+                            <input type="number" class="form-control" name="superficie"
+                                   ng-model="maison.superficie">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="tpjpaApp.maison.personne">personne</label>
+                            <select class="form-control" name="personne" ng-model="maison.personne.id" ng-options="personne.id as personne.nom for personne in personnes">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteMaisonConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(maison.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="tpjpaApp.maison.delete.question" translate-values="{id: '{{maison.id}}'}">Are you sure you want to delete this Maison?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="tpjpaApp.maison.adresse">Adresse</th>
+                    <th translate="tpjpaApp.maison.adresseip">Adresseip</th>
+                    <th translate="tpjpaApp.maison.superficie">Superficie</th>
+                    <th translate="tpjpaApp.maison.personne">personne</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="maison in maisons">
+                    <td><a ui-sref="maisonDetail({id:maison.id})">{{maison.id}}</a></td>
+                    <td>{{maison.adresse}}</td>
+                    <td>{{maison.adresseip}}</td>
+                    <td>{{maison.superficie}}</td>
+                    <td>{{maison.personne.nom}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="maisonDetail({id:maison.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(maison.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(maison.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <nav>
+            <ul class="pager">
+                <li ng-show="links['first']" ng-click="loadPage(links['first'])"><a href="#">&lt;&lt;</a></li>
+                <li ng-show="links['prev']" ng-click="loadPage(links['prev'])"><a href="#">&lt;</a></li>
+                <li ng-show="links['next']" ng-click="loadPage(links['next'])"><a href="#">&gt;</a></li>
+                <li ng-show="links['last']" ng-click="loadPage(links['last'])"><a href="#">&gt;&gt;</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

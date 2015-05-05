@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "tpjpa",
+    "packageName": "fr.istic.sir",
+    "packageFolder": "fr/istic/sir",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "3d573dd858bdf2971c6f46973c81c9f68de35913"
+  }
+}

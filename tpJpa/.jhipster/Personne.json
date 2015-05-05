@@ -1,0 +1,65 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "residences",
+            "relationshipNameCapitalized": "Residences",
+            "relationshipFieldName": "residences",
+            "otherEntityName": "maison",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Maison"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nom",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nom",
+            "fieldNameUnderscored": "nom",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "prenom",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Prenom",
+            "fieldNameUnderscored": "prenom",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "datenais",
+            "fieldType": "LocalDate",
+            "fieldNameCapitalized": "Datenais",
+            "fieldNameUnderscored": "datenais",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "mail",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Mail",
+            "fieldNameUnderscored": "mail",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "profil",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Profil",
+            "fieldNameUnderscored": "profil",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": true,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150416215615",
+    "pagination": "pager",
+    "validation": false
+}

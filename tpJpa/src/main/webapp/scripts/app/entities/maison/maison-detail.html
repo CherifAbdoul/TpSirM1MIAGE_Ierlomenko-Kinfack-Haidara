@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="tpjpaApp.maison.detail.title">Maison</span> {{maison.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.maison.adresse">Adresse</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{maison.adresse}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.maison.adresseip">Adresseip</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{maison.adresseip}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.maison.superficie">Superficie</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{maison.superficie}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.maison.personne">personne</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{maison.personne.nom}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="maison"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

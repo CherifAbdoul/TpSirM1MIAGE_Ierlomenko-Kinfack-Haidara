@@ -1,0 +1,42 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "maison",
+            "relationshipNameCapitalized": "Maison",
+            "relationshipFieldName": "maison",
+            "otherEntityName": "maison",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Maison",
+            "otherEntityField": "adresseip"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nomapp",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nomapp",
+            "fieldNameUnderscored": "nomapp",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "conso",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Conso",
+            "fieldNameUnderscored": "conso",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150416220245",
+    "pagination": "pager",
+    "validation": false
+}

@@ -1,0 +1,21 @@
+{
+    "tpjpaApp": {
+        "appareil" : {
+            "home": {
+                "title": "Appareils",
+                "createLabel": "Créer un nouveau Appareil",
+                "createOrEditLabel": "Créer ou éditer un Appareil"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Appareil {{ id }} ?"
+            },
+            "detail": {
+                "title": "Appareil"
+            },
+            "nomapp": "Nomapp",
+            "conso": "Conso",
+            "maison": "maison"
+        }
+    }
+}
+

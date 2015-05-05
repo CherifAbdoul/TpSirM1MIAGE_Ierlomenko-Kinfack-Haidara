@@ -1,0 +1,18 @@
+{
+    "tpjpaApp": {
+        "electronique" : {
+            "home": {
+                "title": "Electroniques",
+                "createLabel": "Créer un nouveau Electronique",
+                "createOrEditLabel": "Créer ou éditer un Electronique"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Electronique {{ id }} ?"
+            },
+            "detail": {
+                "title": "Electronique"
+            }
+        }
+    }
+}
+

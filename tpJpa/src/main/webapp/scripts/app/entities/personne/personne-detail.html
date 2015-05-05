@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="tpjpaApp.personne.detail.title">Personne</span> {{personne.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.personne.nom">Nom</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{personne.nom}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.personne.prenom">Prenom</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{personne.prenom}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.personne.datenais">Datenais</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{personne.datenais}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.personne.mail">Mail</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{personne.mail}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="tpjpaApp.personne.profil">Profil</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{personne.profil}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="personne"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

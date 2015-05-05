@@ -1,0 +1,24 @@
+{
+    "tpjpaApp": {
+        "personne" : {
+            "home": {
+                "title": "Personnes",
+                "createLabel": "Créer un nouveau Personne",
+                "createOrEditLabel": "Créer ou éditer un Personne"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Personne {{ id }} ?"
+            },
+            "detail": {
+                "title": "Personne"
+            },
+            "nom": "Nom",
+            "prenom": "Prenom",
+            "datenais": "Datenais",
+            "mail": "Mail",
+            "profil": "Profil",
+            "residences": "residences"
+        }
+    }
+}
+
